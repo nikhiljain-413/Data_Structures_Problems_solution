@@ -1,5 +1,4 @@
 #include<bits/stdc++.h>
-#include<algorithm>
 using namespace std;
 #define ll long long int
 
@@ -23,9 +22,9 @@ int knapsack(int weight[],int value[],int n,int cap){
 
 int main()
 {
-    int weight[] = {1,2,4,5};
-    int value[] = {1,3,5,7};
-    int n = 4;
-    int bag = 10;
+    int weight[] = {1,2,4,5,6};
+    int value[] = {1,3,5,7,8};
+    int n = 5;
+    int bag = 12;
     cout<<knapsack(weight, value, n,bag);
 }
