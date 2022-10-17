@@ -1,8 +1,10 @@
+//Code Submitted by Nikhil Jain
 #include<bits/stdc++.h>
 #include<algorithm>
 using namespace std;
 #define ll long long int
 
+//This is a global matrix of size 10^3 * 10^3
 const int N=1e3+10;
 static int t[N][N];
 
@@ -30,6 +32,7 @@ int knapsack(int length[], int price[], int len, int n){
 
 int main()
 {
+    //Here we have taken the array of rod to be cut and the profit we will get if we cut into that pieces
     int length[] = {1,2,3,4,5,6,7,8};
     int price[] = {1,5,8,9,10,17,17,20};
     int len=8;
