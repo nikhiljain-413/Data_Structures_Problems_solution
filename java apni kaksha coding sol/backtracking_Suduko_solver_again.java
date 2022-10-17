@@ -1,5 +1,5 @@
 public class backtracking_Suduko_solver_again {
-
+    //we have taken the chessboard manually or we can take the input from user also
     public static char board[][] = {{'5','3','.','.','7','.','.','.','.'},
     {'6','.','.','1','9','5','.','.','.'},
     {'.','9','8','.','.','.','.','6','.'},
@@ -40,8 +40,6 @@ public class backtracking_Suduko_solver_again {
                 }
             }
         }
-        
-
         return true;
     }
 
@@ -50,6 +48,7 @@ public class backtracking_Suduko_solver_again {
             return true;
         }
         int nrow,ncol;
+        //now which index to go is calculate here
         if(col != board.length-1){
             nrow = row;
             ncol = col+1;
@@ -59,6 +58,7 @@ public class backtracking_Suduko_solver_again {
             ncol = 0;
         }
 
+        //if there is some number already present then we only have to check it else if have to loop from 1 to 9 and fit the number.
         if(board[row][col] !='.'){
             if(SudukoSolver(board, nrow, ncol)){
                 return true;
@@ -77,7 +77,6 @@ public class backtracking_Suduko_solver_again {
                 }
             }
         }
-
         return false;
     }
     public static void main(String[] args) {
