@@ -26,15 +26,15 @@ int lcs(string s1, string s2, int n,int m){
             ans = max(ans,t[i][j]);
         }
     }
-    
-
     return ans;
 }
 
 int main()
 {
+    //here we have taken two string manually but we can take strings from user as input
     string s1 = "abcfeh";
     string s2 = "abefh";
+    //Here we are calculating the length of strings
     int n = s1.length();
     int m = s2.length();
     memset(t,-1,sizeof(t));
