@@ -1,20 +1,16 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define ll long long int
-int main()
+int32_t main()
 {
 	string s;
 	getline(cin,s);
-	for (int i=0;i<s.size();i++)
-	{
-		if(s[i]==' ')
-		{
+	for (int i=0;i<s.size();i++){
+		if(s[i]==' '){
 			cout<<endl;
 		}
-		else
-		{
+		else{
 			cout<<(char)((s[i] - 'a')+'A');
 		}
 	}
-	return 0;
 }
